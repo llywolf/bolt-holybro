@@ -43,41 +43,41 @@
 #define DEFAULT_SYSTEM_SHUTDOWN_TIMEOUT_MIN       5
 
 // Default PID gains
-#define PID_ROLL_RATE_KP  250.0
-#define PID_ROLL_RATE_KI  500.0
-#define PID_ROLL_RATE_KD  2.5
-#define PID_ROLL_RATE_KFF 0.0
-#define PID_ROLL_RATE_INTEGRATION_LIMIT    33.3
+#define PID_ROLL_RATE_KP  2.7f // 250.0
+#define PID_ROLL_RATE_KI  1 // 500.0
+#define PID_ROLL_RATE_KD  -0.01f// 2.5
+#define PID_ROLL_RATE_KFF  0.0
+#define PID_ROLL_RATE_INTEGRATION_LIMIT    0.174532925f // 33.3
 
-#define PID_PITCH_RATE_KP  250.0
-#define PID_PITCH_RATE_KI  500.0
-#define PID_PITCH_RATE_KD  2.5
-#define PID_PITCH_RATE_KFF 0.0
-#define PID_PITCH_RATE_INTEGRATION_LIMIT   33.3
+#define PID_PITCH_RATE_KP  2.7f // 250.0
+#define PID_PITCH_RATE_KI  1 // 500.0
+#define PID_PITCH_RATE_KD  -0.01f// 2.5
+#define PID_PITCH_RATE_KFF  0.0
+#define PID_PITCH_RATE_INTEGRATION_LIMIT    0.174532925f // 33.3
 
-#define PID_YAW_RATE_KP  120.0
-#define PID_YAW_RATE_KI  16.7
-#define PID_YAW_RATE_KD  0.0
-#define PID_YAW_RATE_KFF 0.0
-#define PID_YAW_RATE_INTEGRATION_LIMIT     166.7
+#define PID_YAW_RATE_KP  2.7f // 250.0
+#define PID_YAW_RATE_KI  1 // 500.0
+#define PID_YAW_RATE_KD  -0.01f// 2.5
+#define PID_YAW_RATE_KFF  0.0
+#define PID_YAW_RATE_INTEGRATION_LIMIT    0.174532925f // 33.3
 
-#define PID_ROLL_KP  6.0
-#define PID_ROLL_KI  3.0
+#define PID_ROLL_KP  4.5f // 6.0
+#define PID_ROLL_KI  0 // 3.0
 #define PID_ROLL_KD  0.0
 #define PID_ROLL_KFF 0.0
-#define PID_ROLL_INTEGRATION_LIMIT    20.0
+#define PID_ROLL_INTEGRATION_LIMIT    0.034906585f // 20.0
 
-#define PID_PITCH_KP  6.0
-#define PID_PITCH_KI  3.0
+#define PID_PITCH_KP  4.5f // 6.0
+#define PID_PITCH_KI  0 // 3.0
 #define PID_PITCH_KD  0.0
 #define PID_PITCH_KFF 0.0
-#define PID_PITCH_INTEGRATION_LIMIT   20.0
+#define PID_PITCH_INTEGRATION_LIMIT   0.034906585f // 20.0
 
-#define PID_YAW_KP  6.0
-#define PID_YAW_KI  1.0
-#define PID_YAW_KD  0.35
+#define PID_YAW_KP  10 // 6.0
+#define PID_YAW_KI  0 // 1.0
+#define PID_YAW_KD  0 // 0.35
 #define PID_YAW_KFF 0.0
-#define PID_YAW_INTEGRATION_LIMIT     360.0
+#define PID_YAW_INTEGRATION_LIMIT     0.13962634f // 360.0
 
 #define PID_VEL_X_KP 25.0f
 #define PID_VEL_X_KI 1.0f
@@ -99,25 +99,25 @@
 #define PID_VEL_Z_KD_BARO_Z_HOLD 1.5f
 #define PID_VEL_Z_KFF_BARO_Z_HOLD 0.0f
 
-#define PID_VEL_ROLL_MAX 20.0f
-#define PID_VEL_PITCH_MAX 20.0f
+#define PID_VEL_ROLL_MAX 5f // 20.0f
+#define PID_VEL_PITCH_MAX 5f // 20.0f
 #define PID_VEL_THRUST_BASE 36000.0f
 #define PID_VEL_THRUST_BASE_BARO_Z_HOLD 38000.0f
 #define PID_VEL_THRUST_MIN 20000.0f
 
-#define PID_POS_X_KP 2.0f
-#define PID_POS_X_KI 0.0f
-#define PID_POS_X_KD 0.0f
+#define PID_POS_X_KP 0.35f // 2.0f
+#define PID_POS_X_KI 0.25f // 0.0f
+#define PID_POS_X_KD 0.35f // 0.0f
 #define PID_POS_X_KFF 0.0f
 
-#define PID_POS_Y_KP 2.0f
-#define PID_POS_Y_KI 0.0f
-#define PID_POS_Y_KD 0.0f
+#define PID_POS_Y_KP 0.35f // 2.0f
+#define PID_POS_Y_KI 0.25f // 0.0f
+#define PID_POS_Y_KD 0.35f // 0.0f
 #define PID_POS_Y_KFF 0.0f
 
-#define PID_POS_Z_KP 2.0f
-#define PID_POS_Z_KI 0.5f
-#define PID_POS_Z_KD 0.0f
+#define PID_POS_Z_KP 5.882352941f // 2.0f
+#define PID_POS_Z_KI 0 // 0.5f
+#define PID_POS_Z_KD -5,050505051f // 0.0f
 #define PID_POS_Z_KFF 0.0f
 
 #define PID_POS_VEL_X_MAX 1.0f

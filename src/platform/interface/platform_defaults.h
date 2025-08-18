@@ -51,11 +51,11 @@
 // TODO provide those in each config. Those are values of cf2 platform
 #ifndef ARM_LENGTH
     // m
-    #define ARM_LENGTH  0.046f
+    #define ARM_LENGTH  0.25f // 0.046f
 #endif
 #ifndef CF_MASS
     // kg
-    #define CF_MASS     0.027f
+    #define CF_MASS     1.3269 // 0.027f
 #endif
 #ifndef VMOTOR2THRUST0
     #define VMOTOR2THRUST0  0.0f
@@ -70,13 +70,13 @@
     #define VMOTOR2THRUST3  0.0f
 #endif
 #ifndef THRUST_MIN
-    #define THRUST_MIN      0.02f
+    #define THRUST_MIN      115f // 0.02f
 #endif
 #ifndef THRUST_MAX
-    #define THRUST_MAX      0.1125f
+    #define THRUST_MAX     907f // 0.1125f
 #endif
 #ifndef THRUST2TORQUE
-    #define THRUST2TORQUE   0.005964552f
+    #define THRUST2TORQUE   0.000031539f // 0.005964552f
 #endif
 
 // IMU alignment on the airframe 
