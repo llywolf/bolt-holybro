@@ -107,17 +107,17 @@
 
 #define PID_POS_X_KP 0.35f // 2.0f
 #define PID_POS_X_KI 0.25f // 0.0f
-#define PID_POS_X_KD 0.35f // 0.0f
+#define PID_POS_X_KD -0.35f // 0.0f
 #define PID_POS_X_KFF 0.0f
 
 #define PID_POS_Y_KP 0.35f // 2.0f
 #define PID_POS_Y_KI 0.25f // 0.0f
-#define PID_POS_Y_KD 0.35f // 0.0f
+#define PID_POS_Y_KD -0.35f // 0.0f
 #define PID_POS_Y_KFF 0.0f
 
 #define PID_POS_Z_KP 5.882352941f // 2.0f
 #define PID_POS_Z_KI 0 // 0.5f
-#define PID_POS_Z_KD -5,050505051f // 0.0f
+#define PID_POS_Z_KD -5.050505051f // 0.0f
 #define PID_POS_Z_KFF 0.0f
 
 #define PID_POS_VEL_X_MAX 1.0f
